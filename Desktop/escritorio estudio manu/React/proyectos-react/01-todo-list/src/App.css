@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body{
+    background-color: rgb(21, 23, 34);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+.div_input{
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: rgb(44, 48, 75);
+    text-align: center;
+
+}
+
+.input {
+    background-color: rgb(44, 48, 75);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+input:focus {
+    outline: none
+}
+
+
+.div_todo {
+    padding: 10px;
+    display: flex;
+    background-color: rgb(44, 48, 75);
+    
+    width: 100%;
+    text-align: center;
+    justify-content: flex-start;
+    color: white;
+    border-bottom: .3px solid rgb(72, 76, 99);
+    align-items: center;
+}
+
+.tareas{
+    background-color: rgb(44, 48, 75);
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.div_todo p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.div_todo p.checked {
+    text-decoration: line-through;
+}
+
+.checkbox{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 100%;
+    border: .3px solid rgba(122, 122, 122, 0.432);
+    
+}
+
+.checkbox:checked{
+    background-color: rgb(0, 255, 13);
+    border-color: transparent;
+}
+
+
+
+.div_todo .close-icon{
+    margin-left: auto;
+}
+
+.close-icon{
+    width: 30px;
+    cursor: pointer;
+    fill: aqua;
+}
+
+.filters{
+    background-color: rgb(44, 48, 75);
+    width: 100%;
+    padding: 10px;
+    color: rgb(122, 122, 122);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.itemsLeft{
+    
+    text-align: center;
+}
+
+.filter_button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    color: rgb(122, 122, 122);
+    transition: color 300ms ease-in-out;
+}
+
+.filter_button:hover{
+    color: white;
+}
+
+.filtros{
+    display: flex;
+    justify-content: center;
+}
+
+.button_eliminar{
+    all:unset;
+    background-color: rgba(255, 0, 0, 0.185);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: solid 1px red;
+    cursor: pointer; 
+    transition: 0.5s;  
+    
+}
+
+.button_eliminar:hover{
+    background-color: red;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .tareas {
+      width: 95%;
+    }
+
+    .div_input{
+        width: 95%;
+    }
+}
